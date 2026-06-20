@@ -14,6 +14,8 @@ These instructions apply to `/Users/huanbosun/Documents/Gold&Silver`.
 
 This project supports a precious-metals research and trading framework.
 
+GitHub repository: `https://github.com/huanbo-s/PreciousMetalInvestment`
+
 The user's research documents are:
 
 - Continuously updated source of truth: `/Users/huanbosun/Documents/Gold&Silver/research/黄金中长期趋势研究框架（持续更新版）.md`

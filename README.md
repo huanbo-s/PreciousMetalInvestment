@@ -7,6 +7,8 @@
 
 项目分为两条线：一条维护中长期理论框架，另一条把框架转化为定期更新的市场信号仪表盘。
 
+GitHub 仓库：[huanbo-s/PreciousMetalInvestment](https://github.com/huanbo-s/PreciousMetalInvestment)
+
 ## 项目内容
 
 ### 研究框架
