@@ -1,0 +1,12 @@
+date,indicator,value,previous_value,frequency,source,status,notes
+2026-06-20,spot_gold_usd_oz,4184.93,4358.90,daily,WSJ/FactSet,YELLOW,"Fed hawkish turn pushed gold lower; still above 3800-4000 key zone"
+2026-06-20,comex_gold_front_month_usd_oz,4170.30,4358.90,daily,WSJ/FactSet,YELLOW,"June 19 early quote; US holiday/short-session caveat"
+2026-06-17,dfii10_10y_tips_real_yield_pct,2.23,2.14,daily,FRED,RED,"Latest FRED value; rose after June FOMC"
+2026-06-17,dgs2_2y_treasury_yield_pct,4.20,4.05,daily,FRED,RED,"2Y well above policy-rate upper bound"
+2026-06-17,fed_target_upper_pct,3.75,3.75,event,FOMC,RED,"Fed held 3.50-3.75 but signaled possible hike"
+2026-06-13,initial_claims_sa,226000,230000,weekly,FRED/AP,YELLOW,"4-week average about 223k, below 260-280k trigger"
+2026-06-09,cot_gold_managed_money_net_contracts,105863,112179,weekly,CFTC,YELLOW,"Net long not washed to low levels; data lag before FOMC"
+2026-06-19,wti_crude_usd_bbl,75.79,77.56,daily,MarketWatch/WSJ,GREEN_YELLOW,"Oil sharply below war highs; Hormuz normalization lowers inflation impulse but also safe-haven premium"
+2026-06-19,dxy_index,101.127,,daily,WSJ,RED,"One-year high, consistent with higher-for-longer Fed expectations"
+2026-05-31,core_cpi_yoy_pct,2.9,2.8,monthly,BLS via Kiplinger/Guardian,YELLOW,"Core inflation contained; supports soft-landing risk scenario"
+2026-05-31,headline_cpi_yoy_pct,4.2,3.8,monthly,BLS via Kiplinger/Guardian,RED,"Energy-driven headline inflation at three-year high"

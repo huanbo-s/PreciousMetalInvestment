@@ -1,0 +1,4 @@
+date,event,event_type,expected_direction,gold_reaction,real_yield_reaction,interpretation,notes
+2026-06-10,May CPI: headline 4.2%; core 0.2% MoM and 2.9% YoY,CPI,mixed,"Gold initially bounced then faded","not directly observed here","Core restraint is bullish later, but headline/Fed reaction still dominated","Inflation width remains narrow"
+2026-06-17,Warsh first FOMC: held 3.50-3.75 but signaled possible hike,FOMC,bearish,"Gold weakened after hawkish repricing","DFII10 rose to 2.23; DGS2 rose to 4.20","Rates channel remains dominant; no seller exhaustion","2Y-policy spread remains positive"
+2026-06-19,U.S.-Iran interim deal/Hormuz reopening hopes with oil down,geopolitics/oil,mixed,"Gold remained under pressure near 4185","not directly observed here","Lower oil reduces inflation pressure later but removes safe-haven/geopolitical premium now","Deal fragility remains a weekly watch item"
