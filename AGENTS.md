@@ -50,8 +50,10 @@ The research framework now has two project-local copies under `research/`: a fro
 Theory framework update completed on 2026-06-21:
 
 - Applied `/Users/huanbosun/Documents/Gold&Silver/research/patches/黄金框架补丁 第1号 底仓分量与硬核层.md` to `/Users/huanbosun/Documents/Gold&Silver/research/黄金中长期趋势研究框架（持续更新版）.md`.
+- Applied `/Users/huanbosun/Documents/Gold&Silver/research/patches/黄金框架补丁 第2号 政治路径层级与一阶监测组.md` to `/Users/huanbosun/Documents/Gold&Silver/research/黄金中长期趋势研究框架（持续更新版）.md`.
 - The frozen archive `/Users/huanbosun/Documents/Gold&Silver/research/黄金中长期趋势研究框架 v2.md` was intentionally not modified.
 - Patch 1 changes the treatment of structural demand: the former "structural base position" is now split into hard-core price-negative-sensitive buyers and soft-layer price-sensitive buyers. The `$3,800` structural support idea is now treated as a hypothesis to be tested during a real drawdown, not as a pre-verified left-side entry reason.
+- Patch 2 adds political-tail hierarchy and the first-order monitoring group. Political/constitutional shocks and Fed-independence risks remain second-order variables unless the market-based escalation triggers in §9.7 light up. Market monitoring should now begin with the first-order chain: inflation + employment -> Fed reaction function -> real rates -> gold.
 
 First formal market-signal update completed for 2026-06-20 05:40 Beijing time:
 
@@ -72,6 +74,7 @@ First formal market-signal update completed for 2026-06-20 05:40 Beijing time:
 - Future agents should not merge the two roles casually. Theory agents improve the thesis; monitoring agents apply the thesis to current data and record evidence.
 - Preserve `research/黄金中长期趋势研究框架 v2.md` as an unchanged baseline unless the user explicitly asks to replace or modify the archive.
 - For future theory work, preserve the Patch 1 distinction between hard-core layer and soft layer. Do not use "central-bank/structural buying" as an automatic left-side support argument without the ex-post demand-response test described in §9.1.
+- For future monitoring work, preserve Patch 2's layer order: first-order main-axis monitoring group, then K-shaped distribution front line, then cycle confirmation, then transition signals. Do not promote political-tail narratives to first-order status without the §9.7 market triggers.
 - Every market update must begin by recording the exact update time. "Latest data" is not valid unless tied to a timestamp and data cutoff.
 
 ## Next Actions
