@@ -34,6 +34,7 @@ The project has two intended agent roles:
    - Purpose: translate the theory framework into periodic market monitoring and trading-discipline checks.
    - Focus: actual market signals, dashboard updates, event reaction logs, and whether the gold/precious-metals bull thesis is intact, delayed, or broken.
    - Output: updates to `dashboard.md`, `data/indicators.csv`, and `data/event_log.csv`; may flag that the theory framework needs review, but should not rewrite the core thesis unless the user explicitly asks.
+   - Required first step for every market-data update: confirm the current absolute time before pulling data, then record local time, UTC time, data cutoff, and market-session caveats in the update.
 
 ## Current Status
 
@@ -71,6 +72,7 @@ First formal market-signal update completed for 2026-06-20 05:40 Beijing time:
 - Future agents should not merge the two roles casually. Theory agents improve the thesis; monitoring agents apply the thesis to current data and record evidence.
 - Preserve `research/黄金中长期趋势研究框架 v2.md` as an unchanged baseline unless the user explicitly asks to replace or modify the archive.
 - For future theory work, preserve the Patch 1 distinction between hard-core layer and soft layer. Do not use "central-bank/structural buying" as an automatic left-side support argument without the ex-post demand-response test described in §9.1.
+- Every market update must begin by recording the exact update time. "Latest data" is not valid unless tied to a timestamp and data cutoff.
 
 ## Next Actions
 
