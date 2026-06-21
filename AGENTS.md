@@ -61,6 +61,13 @@ First formal market-signal update completed for 2026-06-20 05:40 Beijing time:
 - `/Users/huanbosun/Documents/Gold&Silver/reports/2026-06-20-first-gold-analysis.md` contains the first analysis note.
 - `data/indicators.csv` and `data/event_log.csv` contain the first set of observations.
 
+Second formal market-signal update completed for 2026-06-22 01:52 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now contains the second dated dashboard using the Patch 2 monitoring order.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-06-22-gold-monitoring-update.md` contains the second analysis note.
+- `data/indicators.csv` and `data/event_log.csv` contain the second set of observations.
+- Core conclusion: long-term bull thesis remains intact but weak; one-order chain still suppresses gold because inflation is elevated, employment has not cracked, the FOMC reaction function remains hawkish, and real yields rose. No right-side confirmation and no political-tail upgrade under §9.7.
+
 ## Important Decisions
 
 - The user currently holds a heavy precious-metals position and needs a trading framework that can continuously test whether the bull-market thesis is breaking.
