@@ -35,6 +35,8 @@ The project has two intended agent roles:
    - Focus: actual market signals, dashboard updates, event reaction logs, and whether the gold/precious-metals bull thesis is intact, delayed, or broken.
    - Output: updates to `dashboard.md`, `data/indicators.csv`, and `data/event_log.csv`; may flag that the theory framework needs review, but should not rewrite the core thesis unless the user explicitly asks.
    - Required first step for every market-data update: confirm the current absolute time before pulling data, then record local time, UTC time, data cutoff, and market-session caveats in the update.
+   - Required second step: decide whether the user asked for a lightweight update or a full update. If the user did not specify, check each data source's age against its cadence and choose automatically: lightweight when only daily/high-sensitivity data are stale; full when any weekly, semi-monthly, monthly, quarterly, or event-driven core signal is stale or a major event occurred.
+   - Every update must explicitly record `update_mode` (`lightweight` or `full`) and explain why that mode was chosen.
 
 ## Current Status
 
@@ -83,6 +85,7 @@ Second formal market-signal update completed for 2026-06-22 01:52 Beijing time:
 - For future theory work, preserve the Patch 1 distinction between hard-core layer and soft layer. Do not use "central-bank/structural buying" as an automatic left-side support argument without the ex-post demand-response test described in §9.1.
 - For future monitoring work, preserve Patch 2's layer order: first-order main-axis monitoring group, then K-shaped distribution front line, then cycle confirmation, then transition signals. Do not promote political-tail narratives to first-order status without the §9.7 market triggers.
 - Every market update must begin by recording the exact update time. "Latest data" is not valid unless tied to a timestamp and data cutoff.
+- Unless the user explicitly requests lightweight or full, every market update must first compare each indicator's latest data timestamp against its required cadence, then choose update mode. Do not perform unnecessary full refreshes for slow data, and do not use a lightweight refresh when slow or event-driven core data are stale.
 
 ## Next Actions
 
