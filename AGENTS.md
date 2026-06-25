@@ -36,6 +36,8 @@ The project has two intended agent roles:
    - Output: updates to `dashboard.md`, `data/indicators.csv`, and `data/event_log.csv`; may flag that the theory framework needs review, but should not rewrite the core thesis unless the user explicitly asks.
    - Required first step for every market-data update: confirm the current absolute time before pulling data, then record local time, UTC time, data cutoff, and market-session caveats in the update.
    - Required second step: decide whether the user asked for a lightweight update or a full update. If the user did not specify, check each data source's age against its cadence and choose automatically: lightweight when only daily/high-sensitivity data are stale; full when any weekly, semi-monthly, monthly, quarterly, or event-driven core signal is stale or a major event occurred.
+   - Required news-context step for every update, lightweight or full: after pulling and checking market data, retrieve recent important news to identify whether key data have just been released or are about to be released, and whether recent news helps explain short-term precious-metals price action or market sentiment.
+   - News is auxiliary context only. It must be separated from data evidence and framework conclusions, and must not override the project's own research framework or trading-discipline signals.
    - Every update must explicitly record `update_mode` (`lightweight` or `full`) and explain why that mode was chosen.
 
 ## Current Status
@@ -86,6 +88,7 @@ Second formal market-signal update completed for 2026-06-22 01:52 Beijing time:
 - For future monitoring work, preserve Patch 2's layer order: first-order main-axis monitoring group, then K-shaped distribution front line, then cycle confirmation, then transition signals. Do not promote political-tail narratives to first-order status without the §9.7 market triggers.
 - Every market update must begin by recording the exact update time. "Latest data" is not valid unless tied to a timestamp and data cutoff.
 - Unless the user explicitly requests lightweight or full, every market update must first compare each indicator's latest data timestamp against its required cadence, then choose update mode. Do not perform unnecessary full refreshes for slow data, and do not use a lightweight refresh when slow or event-driven core data are stale.
+- Every market update must include a brief recent-news section after data collection. Use news to detect fresh data releases and interpret short-term market sentiment, but keep it clearly labeled as auxiliary context; the investment judgment still comes from the framework and monitored signals.
 
 ## Next Actions
 
