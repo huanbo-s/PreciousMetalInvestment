@@ -72,6 +72,18 @@ Second formal market-signal update completed for 2026-06-22 01:52 Beijing time:
 - `data/indicators.csv` and `data/event_log.csv` contain the second set of observations.
 - Core conclusion: long-term bull thesis remains intact but weak; one-order chain still suppresses gold because inflation is elevated, employment has not cracked, the FOMC reaction function remains hawkish, and real yields rose. No right-side confirmation and no political-tail upgrade under §9.7.
 
+Full market-signal update completed for 2026-06-25 22:51 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md`, `data/indicators.csv`, and `data/event_log.csv` were updated and pushed to remote `main` at commit `97a11f1`.
+- Core conclusion: gold entered the 3800-4000 test zone after settling below 4000, moving bull-market integrity to yellow/key-zone test. This was not a formal bull-thesis break because 3800 had not been broken and held for two weeks.
+
+Full market-signal update completed for 2026-07-02 03:49 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the July 1 market close and the latest framework state.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-02-gold-monitoring-update.md` contains the formal update note.
+- `data/indicators.csv` and `data/event_log.csv` include July 1/July 2 observations.
+- Core conclusion: gold rebounded above 4000 to 4068.30, but the state remains yellow/key-zone test rather than a right-side turn. ADP softened and real yields eased, but 2Y remains above the policy upper bound, COT net long rose to +115,395, ETF flows remain negative, and the official June payroll report is still pending.
+
 ## Important Decisions
 
 - The user currently holds a heavy precious-metals position and needs a trading framework that can continuously test whether the bull-market thesis is breaking.
