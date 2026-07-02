@@ -80,9 +80,16 @@ Full market-signal update completed for 2026-06-25 22:51 Beijing time:
 Full market-signal update completed for 2026-07-02 03:49 Beijing time:
 
 - `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the July 1 market close and the latest framework state.
-- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-02-gold-monitoring-update.md` contains the formal update note.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-02-gold-monitoring-update.md` was first created as the pre-NFP formal update note; it was later replaced by the post-NFP 20:44 update below.
 - `data/indicators.csv` and `data/event_log.csv` include July 1/July 2 observations.
 - Core conclusion: gold rebounded above 4000 to 4068.30, but the state remains yellow/key-zone test rather than a right-side turn. ADP softened and real yields eased, but 2Y remains above the policy upper bound, COT net long rose to +115,395, ETF flows remain negative, and the official June payroll report is still pending.
+
+Post-NFP full market-signal update completed for 2026-07-02 20:44 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the BLS June payroll report and user-provided real-time London gold, silver, and DXY readings.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-02-gold-monitoring-update.md` contains the post-NFP formal update note.
+- `data/indicators.csv` and `data/event_log.csv` include BLS June payroll data, downward revisions, labor-force details, wage data, and the user-provided real-time market readings.
+- Core conclusion: state improved to yellow/repair test after payrolls slowed to +57,000 and the prior two months were revised down by 74,000; user-provided London gold around 4135 and DXY around 100.637 show a stronger repair move, but this is not a right-side turn until settlement, rates, ETF/flow, and COT confirmation catch up.
 
 ## Important Decisions
 
