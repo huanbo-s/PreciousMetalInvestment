@@ -95,6 +95,7 @@ Post-NFP full market-signal update completed for 2026-07-02 20:44 Beijing time:
 
 - The user currently holds a heavy precious-metals position and needs a trading framework that can continuously test whether the bull-market thesis is breaking.
 - The dashboard should function as a risk and falsification tool, not as a narrative-confirmation tool.
+- Every commit message must begin with exactly one English category prefix: `[Architecture Optimization]` for framework, configuration, tooling, documentation-structure, or process-rule changes; `[Data Update]` for market-data, dashboard-reading, report, indicator-log, or event-log updates.
 - Separate three clocks: long-term thesis, market/position timing, and concrete trading actions.
 - The monitoring framework should distinguish:
   - Bull market intact but in correction.
