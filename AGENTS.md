@@ -113,7 +113,7 @@ Post-NFP full market-signal update completed for 2026-07-02 20:44 Beijing time:
 ## Next Actions
 
 - Improve the first market-signal update by adding reliable daily ETF price/flow sources for GLD, SLV, and GDX. Yahoo Finance and Stooq were unreliable/blocked during the first update.
-- Build or add a Python updater for automatically retrievable data, especially FRED series. Keep manually verified sources for ETF/COT/WGC/AI capex where needed.
+- Build or add a Python updater for automatically retrievable data, especially FRED series. First implemented module: `scripts/lease_rate.py` (implied gold lease rate, patch 3 §6.4B; weekly; stdlib-only; Yahoo COMEX curve + NY Fed SOFR with FRED fallback; run before each weekly dashboard update, appends `data/lease_rate.csv`). Next automation candidate: COMEX registered/eligible stocks. Keep manually verified sources for ETF/COT/WGC/AI capex where needed.
 - When the user asks for theory work, use `research/黄金中长期趋势研究框架（持续更新版）.md` as the source document.
 - When the user asks for monitoring work, update `dashboard.md` and the CSV logs first, then summarize whether any red/yellow/blue/green conditions changed.
 
