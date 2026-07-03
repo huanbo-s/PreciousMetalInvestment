@@ -48,6 +48,7 @@ The project has an initial monitoring scaffold:
 - `/Users/huanbosun/Documents/Gold&Silver/dashboard.md`: periodic dashboard template.
 - `/Users/huanbosun/Documents/Gold&Silver/data/indicators.csv`: indicator history table.
 - `/Users/huanbosun/Documents/Gold&Silver/data/event_log.csv`: key-event reaction log.
+- `/Users/huanbosun/Documents/Gold&Silver/data/physical_tightness.csv`: raw physical-tightness observation table for Patch 3 §6.4B.
 
 The research framework now has two project-local copies under `research/`: a frozen `v2` archive and a clearly named continuously updated working file.
 
@@ -91,6 +92,25 @@ Post-NFP full market-signal update completed for 2026-07-02 20:44 Beijing time:
 - `data/indicators.csv` and `data/event_log.csv` include BLS June payroll data, downward revisions, labor-force details, wage data, and the user-provided real-time market readings.
 - Core conclusion: state improved to yellow/repair test after payrolls slowed to +57,000 and the prior two months were revised down by 74,000; user-provided London gold around 4135 and DXY around 100.637 show a stronger repair move, but this is not a right-side turn until settlement, rates, ETF/flow, and COT confirmation catch up.
 
+Physical-tightness supplemental update completed for 2026-07-04 06:28 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/data/physical_tightness.csv` was created as the raw Patch 3 physical-tightness observation table.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-04-physical-tightness-update.md` records the source parsing and official-source availability review.
+- Parsed user-provided SGE daily quotation workbook: 2026-07-03 Au99.99 close 910.98 CNY/g, volume 4334.58 kg; Au(T+D) close 910.26 CNY/g.
+- Parsed user-provided CME `Gold_Stocks.xls`: report date 2026-07-02, activity date 2026-07-01; registered gold stocks 14,826,009.194 oz; eligible 12,634,943.363 oz; combined 27,460,952.557 oz.
+- Parsed and officially re-downloaded SGE lease-rate PDF for 2026-06-22 to 2026-06-26; checksum matched the local PDF. Six-month weighted lease reference rate 0.30%; one-year weighted rate 0.36%.
+- Official CFTC 2026 disaggregated futures-only zip was re-pulled; standard gold latest row still 2026-06-23, with Managed Money net long +115,395 contracts. No 2026-06-30 row was available.
+- CME direct XLS re-download from the official endpoint failed in this environment (HTTP/2 stream error / no transfer), so the CME observation uses the user-provided official workbook while recording the re-download failure.
+- WGC ETF flows require login/registration for downloads; Swiss-Impex requires manual or browser-based export workflow; LBMA historical tables require MyLBMA/IBA licensing.
+- Core conclusion: physical tightness is no longer blank, but only a baseline has been started. It still does not support a hard-core floor or right-side turn until several weeks of COMEX/SGE/lease data and at least one swing-flow divergence are observed.
+
+Full market-signal update completed for 2026-07-04 04:54 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the July 2 COMEX settlement confirmation, the July 3 U.S. Independence Day observed market holiday, latest FRED series, and data-quality caveats.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-04-gold-monitoring-update.md` contains the formal update note.
+- `data/indicators.csv` and `data/event_log.csv` include July 2 COMEX gold/silver settlement, WSJ Dollar Index, WTI/Brent settlement, June 27 initial claims, July 1 WMTSECL1, FRED rate updates, COT staleness, ETF source failure, and lease-rate source failure.
+- Core conclusion: state remains yellow but improves to "repair confirmation strengthened" because COMEX gold settled at 4112.70, above the 4100-4115 repair zone. This is not a blue/right-side turn because initial claims remain low at 215,000, 2Y remains above the policy upper bound, official post-NFP real-yield confirmation is pending, ETF/COT confirmation is missing, and `scripts/lease_rate.py` failed on Yahoo HTTP 429 with no `data/lease_rate.csv` written.
+
 ## Important Decisions
 
 - The user currently holds a heavy precious-metals position and needs a trading framework that can continuously test whether the bull-market thesis is breaking.
@@ -113,7 +133,7 @@ Post-NFP full market-signal update completed for 2026-07-02 20:44 Beijing time:
 ## Next Actions
 
 - Improve the first market-signal update by adding reliable daily ETF price/flow sources for GLD, SLV, and GDX. Yahoo Finance and Stooq were unreliable/blocked during the first update.
-- Build or add a Python updater for automatically retrievable data, especially FRED series. First implemented module: `scripts/lease_rate.py` (implied gold lease rate, patch 3 §6.4B; weekly; stdlib-only; Yahoo COMEX curve + NY Fed SOFR with FRED fallback; run before each weekly dashboard update, appends `data/lease_rate.csv`). Next automation candidate: COMEX registered/eligible stocks. Keep manually verified sources for ETF/COT/WGC/AI capex where needed.
+- Build or add a Python updater for automatically retrievable data, especially FRED series. First implemented module: `scripts/lease_rate.py` (implied gold lease rate, patch 3 §6.4B; weekly; stdlib-only; Yahoo COMEX curve + NY Fed SOFR with FRED fallback; run before each weekly dashboard update, appends `data/lease_rate.csv`). Next automation candidates: COMEX registered/eligible stocks and an importer for `data/physical_tightness.csv` from user-exported CME/SGE/Swiss-Impex/WGC files. Keep manually verified sources for ETF/COT/WGC/AI capex where needed.
 - When the user asks for theory work, use `research/黄金中长期趋势研究框架（持续更新版）.md` as the source document.
 - When the user asks for monitoring work, update `dashboard.md` and the CSV logs first, then summarize whether any red/yellow/blue/green conditions changed.
 

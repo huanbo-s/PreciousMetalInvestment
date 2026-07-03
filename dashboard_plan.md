@@ -214,5 +214,6 @@
 2. `data/indicators.csv`：每次更新的指标历史。
 3. `data/event_log.csv`：记录重要数据公布后金价反应，用来判断卖方是否枯竭；另按§6.4B.4登记`EFP_dislocation`事件。
 4. `data/lease_rate.csv`：隐含黄金租赁利率序列，由`scripts/lease_rate.py`每周自动追加（补丁3 §6.4B.3）。
+5. `data/physical_tightness.csv`：实物紧张度原始观察表，登记COMEX库存、SGE现货/租借费率、Swiss-Impex、WGC、LBMA可得性和手工导入缺口（补丁3 §6.4B）。
 
 后续可用 Python 自动拉取 FRED 数据，并保留 ETF、WGC、COT、AI capex 等手工校验项。
