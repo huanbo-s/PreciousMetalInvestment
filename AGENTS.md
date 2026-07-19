@@ -111,6 +111,27 @@ Full market-signal update completed for 2026-07-04 04:54 Beijing time:
 - `data/indicators.csv` and `data/event_log.csv` include July 2 COMEX gold/silver settlement, WSJ Dollar Index, WTI/Brent settlement, June 27 initial claims, July 1 WMTSECL1, FRED rate updates, COT staleness, ETF source failure, and lease-rate source failure.
 - Core conclusion: state remains yellow but improves to "repair confirmation strengthened" because COMEX gold settled at 4112.70, above the 4100-4115 repair zone. This is not a blue/right-side turn because initial claims remain low at 215,000, 2Y remains above the policy upper bound, official post-NFP real-yield confirmation is pending, ETF/COT confirmation is missing, and `scripts/lease_rate.py` failed on Yahoo HTTP 429 with no `data/lease_rate.csv` written.
 
+Full market-signal update completed for 2026-07-13 02:35 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the July 10 weekly market close, latest FRED rates/claims/WMTSECL1, updated CFTC COT through 2026-07-07, SGE daily quotation through 2026-07-10, SGE lease-rate data through 2026-07-03, and the July 13-17 CPI/PPI/Warsh testimony risk window.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-13-gold-monitoring-update.md` contains the formal update note.
+- `data/indicators.csv`, `data/event_log.csv`, and `data/physical_tightness.csv` include the latest July 13 observations.
+- Core conclusion: state remains yellow but is downgraded from "repair confirmation strengthened" to "repair weakening / high-level consolidation." Gold settled at 4104.10 on 2026-07-10, still near the 4100 repair zone, but real yields rose to 2.31, DGS2 stayed at 4.16 above the 3.75 policy upper bound, silver weakened to 59.809, COT Managed Money net long remained elevated at +116,161, and ETF/physical confirmation remains missing.
+- Physical tightness: SGE Au99.99 closed at 897.25 CNY/g on 2026-07-10; SGE 6M/1Y weighted lease reference rates for 2026-06-29 to 2026-07-03 were 0.30%/0.20%. The 1Y lease rate fell from 0.36%, so there is no lease-rate tightness spike. CME Gold_Stocks direct pull timed out; latest usable CME inventory remains activity date 2026-07-01.
+- Data quality: `scripts/lease_rate.py` again failed on Yahoo HTTP 429; Yahoo chart returned `Edge: Too Many Requests`; Stooq returned browser verification HTML; WGC still requires login/registration. These are missing-data caveats, not evidence of looseness.
+- Next focus: June CPI on Tuesday July 14, PPI Wednesday July 15, retail sales and claims Thursday July 16, and Warsh congressional testimony. If CPI/PPI are sticky and 2Y/real yields rise while gold falls below 4000, the yellow state should move closer to orange.
+
+Full market-signal update completed for 2026-07-20 04:06 Beijing time:
+
+- `/Users/huanbosun/Documents/Gold&Silver/dashboard.md` now reflects the user-provided 2026-07-17 London gold close 4018, intraday low 3959, silver close 55.91, official FRED rates/claims/WMTSECL1, BLS CPI/PPI, U.S. Census retail sales, CFTC COT through 2026-07-14, SGE daily quotation through 2026-07-17, and SGE lease-rate data through 2026-07-10.
+- `/Users/huanbosun/Documents/Gold&Silver/reports/2026-07-20-gold-monitoring-update.md` contains the formal update note.
+- `data/indicators.csv`, `data/event_log.csv`, and `data/physical_tightness.csv` include the latest July 20 observations.
+- Core conclusion: state is downgraded to yellow/orange key-zone test. Gold's 2026-07-17 low at 3959 reactivated the 3800-4000 demand-response test, but the close back above 4000 means the 3800 two-week red trigger is not active. Silver at 55.91, 10Y TIPS at 2.35, DGS2 at 4.16, and COT Managed Money net long at +120,779 prevent a right-side turn.
+- Macro interpretation: June CPI and PPI cooled, but initial claims fell to 208,000 with a 214,250 four-week average, retail sales still rose 0.2%, and Warsh's testimony did not provide a dovish pivot. The live risk is "soft landing + high real rates", which delays the gold bull-market clock.
+- Physical tightness: SGE Au99.99 closed at 872.48 CNY/g on 2026-07-17 with 5,776.98 kg volume; SGE 6M/1Y weighted lease reference rates for 2026-07-06 to 2026-07-10 were 0.30%/0.26%. The modest 1Y lease-rate rise is not a tightness spike. CME Gold_Stocks direct pull timed out after 25 seconds; latest usable CME inventory remains activity date 2026-07-01.
+- Data quality: `scripts/lease_rate.py` again failed on Yahoo HTTP 429; Yahoo GLD/SLV/GDX chart endpoints returned `Edge: Too Many Requests`; WGC still requires login/registration. These are missing-data caveats, not evidence of looseness.
+- Next focus: whether gold can reclaim 4100-4115, whether it instead closes repeatedly below 4000, whether DFII10 reaches 2.5, and whether physical/ETF/COT evidence can finally show genuine demand-response confirmation.
+
 ## Important Decisions
 
 - The user currently holds a heavy precious-metals position and needs a trading framework that can continuously test whether the bull-market thesis is breaking.
